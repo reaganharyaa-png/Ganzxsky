@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 2px solid #ccc;
+        }
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            min-height: 500px;
+        }
+        aside {
+            width: 250px;
+            background: #fafafa;
+            border-right: 2px solid #ccc;
+            padding: 15px;
+        }
+        aside h3 {
+            margin-top: 0;
+        }
+        .foto {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px auto;
+            /* Tambahkan properti ini */
+            overflow: hidden;
+        }
+        /* Tambahkan style untuk gambar */
+        .foto img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        aside button {
+            display: block;
+            margin: 20px auto;
+            padding: 8px 16px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            border-left: 2px solid #ccc;
+        }
+        main section {
+            flex: 1;
+            border-right: 2px solid #ccc;
+            padding: 20px;
+        }
+        footer {
+            background: #f0f0f0;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><strong>NAMA KELOMPOK</strong></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Galery</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside>
+            <h3>Nama</h3>
+            <!-- Ubah div.foto menjadi tag img -->
+            <div class="foto">
+                <img src="URL_GAMBAR_ANDA" alt="Foto Profil">
+            </div>
+            <p>Profil...</p>
+            <p>........</p>
+            <p>........</p>
+            <button>Detail</button>
+        </aside>
+
+        <main>
+            <section>
+                <h2>Kolom 1</h2>
+            </section>
+            <section>
+                <h2>Kolom 2</h2>
+            </section>
+            <section>
+                <h2>Kolom 3</h2>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        by ....
+    </footer>
+</body>
+</html>
